@@ -6,7 +6,7 @@
 
         <div class="row">
             <div class="col-4">
-                <img src="{{ site.url }}/assets/images/author_icon.jpg" class="img-fluid icon_trim px-1">
+                <img src="{{ '/assets/images/author_icon.jpg' | absolute_url }}" class="img-fluid icon_trim px-1">
             </div>
             <div class="col-8">
                 <h4>
@@ -34,9 +34,10 @@
     <div class="Container">
         <h3>カテゴリー</h3>
 
-        <li><a href="/Blog">全て({{site.posts.size}})</a></li>
+        <li><a href="{{ '/blog' | absolute_url }}">全て({{site.posts.size}})</a></li>
         {% for category in site.categories %}
-        <li><a href="/categories/{{ category[0] }}/">{{ category[0] | slug2name }}({{category[1].size}})</a></li>
+        {% assign ctg_url = "/categories/" | append: category[0] %}
+        <li><a href="{{ ctg_url | absolute_url }}">{{ category[0] | slug2name }}({{category[1].size}})</a></li>
         {% endfor %}
 
     </div>

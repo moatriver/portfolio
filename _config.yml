@@ -4,12 +4,13 @@ description: モリバーが開発したアプリの紹介や勉強していく�
 twitter_id: moatriver19
 
 locale: ja_JP
-url: https://moatriver.github.io/portfolio
+url: https://moatriver.github.io
+baseurl: /portfolio
 destination: docs
 
 defaults:
   - scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"

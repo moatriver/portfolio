@@ -12,7 +12,7 @@ permalink: /
 {% for post in site.posts limit:10 %}
 <div class="border-bottom mt-2">
     <small  class="text-muted">{{ post.date | date: "%Y/%m/%d" }} {{post.categories[0] | slug2name}}</small>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.url | absolute_url}}">{{ post.title }}</a></h2>
     {{ post.excerpt }}
 </div>
 {% endfor %}
