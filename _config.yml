@@ -5,6 +5,8 @@ twitter_id: moatriver19
 
 locale: ja_JP
 
+destination: docs
+
 defaults:
   - scope:
       path: ""
