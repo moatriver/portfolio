@@ -1,0 +1,19 @@
+<header class="border-bottom">
+    <nav class="navbar navbar-light navbar-expand-xl">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="/">{{site.site_title}}</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu1"
+                aria-controls="navmenu1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse row justify-content-end" id="navmenu1">
+
+                <div class="navbar-nav col-auto me-4">
+                    {% include navigate_links.html %}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

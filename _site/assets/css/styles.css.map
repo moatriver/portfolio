@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";",
+		".icon_trim{\r\n  border-radius: 50%;\r\n}\r\n\r\n.border-lr{\r\n  border-left: 1px solid #dee2e6;\r\n  border-right: 1px solid #dee2e6;\r\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,UAAU,CAAA,EACR,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,UAAU,CAAA,EACR,WAAW,EAAE,iBAAiB,EAC9B,YAAY,EAAE,iBAAiB,GAChC"
+}

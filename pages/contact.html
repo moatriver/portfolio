@@ -1,0 +1,31 @@
+---
+title: Contact
+permalink: /contact
+visible_Rcol: false
+---
+<!-- link to e-mail & SNS -->
+<h1>Contact</h1>
+
+<p>
+  何か連絡事項がございましたら、お気軽にご連絡ください。
+  <br>
+  Twitterのリプライ、DMにも対応いたします。
+</p>
+
+<p>
+  メールでの連絡が必要な場合には、下記のメールアドレスよりご連絡いただけますと幸いです。
+  JavaScriptが有効な環境であれば、「メールを作成」ボタンを押すことでメーラーが起動いたします。
+</p>
+
+<form name="fm">
+  <input type="text" name="e1" readonly value="moatriver19" onfocus="this.select(); document.execCommand('copy');">
+  @
+  <input type="text" name="e2" readonly value="gmail.com" onfocus="this.select(); document.execCommand('copy');">
+  <script type="text/javascript">
+     function ms() {
+        location.href = String.fromCharCode(109,97,105,108,116,111,58) + document.fm.e1.value + "@" + document.fm.e2.value;
+     }
+  </script>
+  <input type="button" value="メールを作成" onclick="ms();">
+</form>
+

@@ -1,0 +1,53 @@
+<!-- Profile -->
+<div class="Container p-4" style="background-color:white;">
+    <div class="Container">
+
+        <h3> プロフィール </h3>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="/assets/images/author_icon.jpg" class="img-fluid icon_trim px-1">
+            </div>
+            <div class="col-8">
+                <h4>
+                    モリバー
+                    <small class="text-muted">
+                        <a class="text-decoration-none" href="https://twitter.com/{{ site.twitter_id }}">@{{ site.twitter_id }}</a>
+                    </small>
+                </h4>
+
+                <p>
+                    高専 情報工学科 所属
+
+                    <br>
+
+                    深層学習 web開発
+
+                    <br>
+                    フルスタックエンジニア予備軍
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- categories -->
+    <div class="Container">
+        <h3>カテゴリー</h3>
+
+        <li><a href="/Blog">全て({{site.posts.size}})</a></li>
+        {% for category in site.categories %}
+        <li><a href="/categories/{{ category[0] }}/">{{ category[0] | slug2name }}({{category[1].size}})</a></li>
+        {% endfor %}
+
+    </div>
+
+    <!-- Twitter TL -->
+    <div class="Container">
+        <h3>Twitter</h3>
+        <a class="twitter-timeline" data-height="1080" href="https://twitter.com/{{ site.twitter_id }}?ref_src=twsrc%5Etfw">Tweets
+            by
+            {{ site.twitter_id }}</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+</div>

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h1>カテゴリ：{{ page.title | slug2name }} 記事一覧</h1>
+
+{% for post in page.posts %}
+{% include post_excerpt.html %}
+{% endfor %}

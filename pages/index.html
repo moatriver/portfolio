@@ -1,0 +1,18 @@
+---
+layout: default
+title: モリバーの雑記帳
+permalink: /
+---
+<h2 class="my-2">{{ site.title }}</h2>
+高専出身の私が、アプリやプログラムについての開発記事や、勉強していく中で見つけたことや思ったことなどを書き綴っていきます。
+
+<h2 class="my-2">最新記事</h2>
+
+
+{% for post in site.posts limit:10 %}
+<div class="border-bottom mt-2">
+    <small  class="text-muted">{{ post.date | date: "%Y/%m/%d" }} {{post.categories[0] | slug2name}}</small>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+</div>
+{% endfor %}

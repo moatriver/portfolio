@@ -1,0 +1,31 @@
+title: モリバーの雑記帳
+tagline: モリバーが開発したアプリの紹介や勉強していく中で見つけたこと、思ったことを書くサイト
+description: モリバーが開発したアプリの紹介や勉強していく中で見つけたこと、思ったことを書くサイト
+twitter_id: moatriver19
+
+locale: ja_JP
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-archives
+
+category_slugs:
+  notes: "雑記"
+  machine-learning: "機械学習"
+
+jekyll-archives:
+  enabled: [categories]
+  layout: archive
+  permalinks:
+    category: '/categories/:name/'
