@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://moatriver.github.io/portfolio/sitemap.xml
